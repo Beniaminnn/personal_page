@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import FloatingText  from "./FloatingText";
+import TextEffect from "./TextEffect";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -86,7 +87,7 @@ const MainPage = () => {
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
             }}>
                 <h2 style={{ fontFamily: 'Space Age' }}><FloatingText text="ABOUT ME" delay={0.15}/></h2>
-                <p style={{ fontFamily: 'Nasalization' }}>This is a section where you can write about yourself, your background, and your interests.</p>
+                <p style={{ fontFamily: 'Nasalization' }}><TextEffect text="is a section where you can write about yourself, your background, and your interests."/></p>
             </section>
 
             {/* Section 2 */}
@@ -99,7 +100,7 @@ const MainPage = () => {
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
             }}>
                 <h2 style={{ fontFamily: 'Space Age' }}><FloatingText text="MY PROJECTS" delay={0.2}/></h2>
-                <p style={{ fontFamily: 'Nasalization' }}>A showcase of my recent projects and achievements, including links to GitHub or live demos.</p>
+                <p style={{ fontFamily: 'Nasalization' }}><TextEffect text={"showcase of my recent projects and achievements, including links to GitHub or live demos."}/> </p>
             </section>
 
             {/* Section 3 */}
@@ -112,7 +113,7 @@ const MainPage = () => {
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
             }}>
                 <h2 style={{ fontFamily: 'Space Age' }}><FloatingText text="CONTACT" delay={0.25}/></h2>
-                <p style={{ fontFamily: 'Nasalization' }}>Get in touch with me via social media, email, or LinkedIn. Looking forward to connecting!</p>
+                <p style={{ fontFamily: 'Nasalization' }}><TextEffect text="Feel free to in touch with me via social media, email, or LinkedIn. Looking forward to connecting!"/></p>
             </section>
         </div>
     );
